@@ -128,49 +128,43 @@ const GALLERY_ITEMS = [
     id: 1,
     category: "Classrooms",
     title: "Bright Interactive Learning Room",
-    image: "../public/images/classroom1.jpeg",
+    image: "../images/classroom1.jpeg",
   },
   {
     id: 2,
     category: "Classrooms",
     title: "Safe Outdoor Playground & Turf",
-    image:
-      "../public/images/classroom2.jpeg",
+    image: "../images/classroom2.jpeg",
   },
   {
     id: 3,
     category: "Classrooms",
     title: "Creative Painting & Expression",
-    image:
-      "../public/images/classroom3.jpeg",
+    image: "../images/classroom3.jpeg",
   },
   {
     id: 4,
     category: "Classrooms",
     title: "Organic Meal Time & Etiquette",
-    image:
-      "../public/images/classroom4.jpeg",
+    image: "../images/classroom4.jpeg",
   },
   {
     id: 5,
     category: "Classrooms",
     title: "Montessori Reading Nook",
-    image:
-      "../public/images/classroom5.jpeg",
+    image: "../images/classroom5.jpeg",
   },
   {
     id: 6,
     category: "School",
     title: "Little Scientists Experimenting",
-    image:
-      "../public/images/outside.jpeg",
+    image: "../images/outside.jpeg",
   },
-   {
+  {
     id: 7,
     category: "Play Area",
     title: "Little Scientists Experimenting",
-    image:
-      "../public/images/play_area.jpeg",
+    image: "../images/play_area.jpeg",
   },
 ];
 
@@ -300,7 +294,7 @@ export default function App() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
             <img
-              src="/highview.png"
+              src="./images/highview.png"
               alt="Highview Preschool Botswana Logo"
               className="h-14 w-auto object-contain transform group-hover:scale-105 transition-transform"
             />
@@ -750,21 +744,19 @@ export default function App() {
 
           {/* Gallery Category Filter Buttons */}
           <div className="flex flex-wrap justify-center gap-2 mb-10">
-            {["All", "Classrooms", "Play Area", "School"].map(
-              (cat) => (
-                <button
-                  key={cat}
-                  onClick={() => setSelectedGalleryCategory(cat)}
-                  className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
-                    selectedGalleryCategory === cat
-                      ? "bg-rose-500 text-white shadow-md"
-                      : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-                  }`}
-                >
-                  {cat}
-                </button>
-              ),
-            )}
+            {["All", "Classrooms", "Play Area", "School"].map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setSelectedGalleryCategory(cat)}
+                className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
+                  selectedGalleryCategory === cat
+                    ? "bg-rose-500 text-white shadow-md"
+                    : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
           </div>
 
           {/* Gallery Image Grid */}
@@ -1116,7 +1108,7 @@ export default function App() {
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-rose-500 flex items-center justify-center text-white">
                   <img
-                    src="/highview.png"
+                    src="./images/highview.png"
                     alt="Highview Preschool Botswana Logo"
                     className="h-14 w-auto object-contain transform group-hover:scale-105 transition-transform"
                   />
