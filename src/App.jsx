@@ -28,13 +28,13 @@ import {
 const PROGRAMS = [
   {
     id: "toddlers",
-    title: "Toddler Program",
+    title: "Baby Class",
     age: "2 - 3 Years",
     badge: "Early Explorers",
     color: "bg-amber-100 text-amber-800 border-amber-200",
     accentColor: "from-amber-400 to-orange-400",
     description:
-      "A gentle introduction to structured social play, motor skills development, and sensory exploration in a cozy environment.",
+      "Our youngest children learn through paly, movement and hands-on discovery, with time to rest as part of their day.",
     features: [
       "Sensory Play & Art",
       "Basic Social Communication",
@@ -42,23 +42,29 @@ const PROGRAMS = [
       "Potty Training Support",
     ],
     schedule: [
-      { time: "08:30 AM", activity: "Welcoming & Free Play" },
-      { time: "09:30 AM", activity: "Circle Time & Songs" },
-      { time: "10:15 AM", activity: "Healthy Morning Snack" },
-      { time: "11:00 AM", activity: "Outdoor Sensory Garden" },
-      { time: "12:00 PM", activity: "Nutritious Lunch" },
-      { time: "01:00 PM", activity: "Nap & Quiet Time" },
+      { time: "07:00 AM - 09:00 AM", activity: "Arrival &  Free Play" },
+      {
+        time: "09:00 AM",
+        activity:
+          "Breakfast, Morning Circle Time, Sensory Activities & Outdoor Play",
+      },
+      {
+        time: "12:00 PM",
+        activity:
+          "Lunch, Afternoon Story Time, Nap & Quiet Time, Afternoon Snack and Calm Play",
+      },
+      { time: "04:30 PM - 05:30 PM", activity: "Departure" },
     ],
   },
   {
     id: "preschool",
-    title: "Preschool Program",
+    title: "Kindergarden",
     age: "3 - 4 Years",
-    badge: "Curious Creators",
+    badge: "Curious Littles",
     color: "bg-sky-100 text-sky-800 border-sky-200",
     accentColor: "from-sky-400 to-blue-500",
     description:
-      "Fostering independence, early literacy, numeracy concepts, and collaborative problem-solving through play-based discovery.",
+      "Children build language, confidence and independence through a balance of guided learning and play.",
     features: [
       "Phonics & Storytelling",
       "Math Foundations",
@@ -66,23 +72,29 @@ const PROGRAMS = [
       "Music & Movement",
     ],
     schedule: [
-      { time: "08:30 AM", activity: "Arrival & Table Activities" },
-      { time: "09:15 AM", activity: "Language & Literacy Lab" },
-      { time: "10:30 AM", activity: "Snack & Recess" },
-      { time: "11:15 AM", activity: "Guided STEM Projects" },
-      { time: "12:30 PM", activity: "Lunch Time" },
-      { time: "02:00 PM", activity: "Creative Arts & Music" },
+      { time: "07:00 AM - 09:00 AM", activity: "Arrival &  Free Play" },
+      {
+        time: "09:00 AM",
+        activity:
+          "Breakfast, Morning Language & Literacy, Outdoor Paly and Guided Activities",
+      },
+      {
+        time: "12:00 PM",
+        activity:
+          "Lunch, Afternoon Story Time, Afternoon Snack and Creative Arts",
+      },
+      { time: "04:30 PM - 05:30 PM", activity: "Departure" },
     ],
   },
   {
     id: "kindergarten",
-    title: "Kindergarten Program",
+    title: "Reception",
     age: "4 - 5 Years",
     badge: "Future Leaders",
     color: "bg-emerald-100 text-emerald-800 border-emerald-200",
     accentColor: "from-emerald-400 to-teal-500",
     description:
-      "Preparing children for formal primary school education with robust cognitive, critical thinking, and emotional resilience skills.",
+      "Our Reception children explore new ideas through a mix of classroom learning, hands-on activities and outdoor play.",
     features: [
       "Advanced Literacy & Reading",
       "Logic & Primary Math",
@@ -90,12 +102,23 @@ const PROGRAMS = [
       "Project-Based Learning",
     ],
     schedule: [
-      { time: "08:30 AM", activity: "Morning Assembly & News" },
-      { time: "09:00 AM", activity: "Mathematics & Logic Workshop" },
-      { time: "10:30 AM", activity: "Outdoor Sports & Gym" },
-      { time: "11:30 AM", activity: "English Literacy & Reading" },
-      { time: "12:30 PM", activity: "Lunch & Social Bonding" },
-      { time: "02:00 PM", activity: "Coding & Robotics Fun" },
+      { time: "07:00 AM - 08:30 AM", activity: "Arrival &  Free Play" },
+      {
+        time: "08:30 AM - 09:00 AM",
+        activity: "Circle Time & Morning Assembly",
+      },
+      { time: "09:00 AM - 09:30 AM", activity: "Breakfast" },
+      {
+        time: "09:30 AM - 12:00 PM",
+        activity:
+          "Mathematics & Logic, English Literacy, Science and Outdoor Activities",
+      },
+      {
+        time: "12:00 PM - 12:30 PM",
+        activity:
+          "Lunch Afternoon, Rest Time, Afternoon Snack, Creative & Practical Activities",
+      },
+      { time: "04:30 PM - 05:00 PM", activity: "Departure" },
     ],
   },
 ];
@@ -105,43 +128,49 @@ const GALLERY_ITEMS = [
     id: 1,
     category: "Classrooms",
     title: "Bright Interactive Learning Room",
-    image:
-      "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=800&q=80",
+    image: "../public/images/classroom1.jpeg",
   },
   {
     id: 2,
-    category: "Play Area",
+    category: "Classrooms",
     title: "Safe Outdoor Playground & Turf",
     image:
-      "https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=800&q=80",
+      "../public/images/classroom2.jpeg",
   },
   {
     id: 3,
-    category: "Activities",
+    category: "Classrooms",
     title: "Creative Painting & Expression",
     image:
-      "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=800&q=80",
+      "../public/images/classroom3.jpeg",
   },
   {
     id: 4,
-    category: "Dining",
+    category: "Classrooms",
     title: "Organic Meal Time & Etiquette",
     image:
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80",
+      "../public/images/classroom4.jpeg",
   },
   {
     id: 5,
     category: "Classrooms",
     title: "Montessori Reading Nook",
     image:
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80",
+      "../public/images/classroom5.jpeg",
   },
   {
     id: 6,
-    category: "Activities",
+    category: "School",
     title: "Little Scientists Experimenting",
     image:
-      "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80",
+      "../public/images/outside.jpeg",
+  },
+   {
+    id: 7,
+    category: "Play Area",
+    title: "Little Scientists Experimenting",
+    image:
+      "../public/images/play_area.jpeg",
   },
 ];
 
@@ -281,7 +310,7 @@ export default function App() {
                 Highview <span className="text-rose-500">Preschool</span>
               </span>
               <span className="text-xs font-semibold tracking-wider text-slate-400 uppercase block mt-1">
-                Botswana
+                Gaborone
               </span>
             </div>
           </a>
@@ -321,7 +350,7 @@ export default function App() {
               className="flex items-center gap-2 text-xs font-bold text-slate-600 hover:text-rose-500 transition-colors px-3 py-2"
             >
               <Phone className="w-4 h-4 text-emerald-500" />
-              +1 (800) 555-HACI
+              74 198 558
             </a>
             <button
               onClick={() => setIsTourModalOpen(true)}
@@ -721,7 +750,7 @@ export default function App() {
 
           {/* Gallery Category Filter Buttons */}
           <div className="flex flex-wrap justify-center gap-2 mb-10">
-            {["All", "Classrooms", "Play Area", "Activities", "Dining"].map(
+            {["All", "Classrooms", "Play Area", "School"].map(
               (cat) => (
                 <button
                   key={cat}
@@ -793,49 +822,6 @@ export default function App() {
       {}
 
       {}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-full">
-              Parent Reviews
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
-              Words From Our Community
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {TESTIMONIALS.map((item, idx) => (
-              <div
-                key={idx}
-                className="p-8 rounded-3xl bg-slate-50 border border-slate-200/80 shadow-sm space-y-4"
-              >
-                <div className="flex items-center gap-1 text-amber-400">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-amber-400" />
-                  ))}
-                </div>
-                <p className="text-slate-700 italic text-base leading-relaxed">
-                  "{item.text}"
-                </p>
-                <div className="flex items-center gap-4 pt-2">
-                  <img
-                    src={item.avatar}
-                    alt={item.name}
-                    className="w-12 h-12 rounded-full object-cover"
-                  />
-                  <div>
-                    <h4 className="font-bold text-slate-900">{item.name}</h4>
-                    <p className="text-xs text-slate-500 font-medium">
-                      {item.role}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {}
       <section
@@ -1129,7 +1115,11 @@ export default function App() {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-rose-500 flex items-center justify-center text-white">
-                  <Sparkles className="w-5 h-5" />
+                  <img
+                    src="/highview.png"
+                    alt="Highview Preschool Botswana Logo"
+                    className="h-14 w-auto object-contain transform group-hover:scale-105 transition-transform"
+                  />
                 </div>
                 <span className="text-2xl font-black text-white">
                   Highview Preschool
@@ -1149,11 +1139,11 @@ export default function App() {
               <ul className="space-y-3 text-xs">
                 <li className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-rose-500 shrink-0" />
-                  <span>123 Sunshine Avenue, Education District</span>
+                  <span>Plot 5207 Village Gaborone</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-emerald-500 shrink-0" />
-                  <span>+1 (800) 555-HACI</span>
+                  <span>74 198 558</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Mail className="w-4 h-4 text-sky-500 shrink-0" />
@@ -1174,16 +1164,6 @@ export default function App() {
                     08:00 AM - 05:30 PM
                   </span>
                 </div>
-                <div className="flex justify-between">
-                  <span>Saturday:</span>
-                  <span className="text-rose-400 font-semibold">
-                    Tour By Appointment
-                  </span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Sunday:</span>
-                  <span className="text-slate-500">Closed</span>
-                </div>
               </div>
             </div>
           </div>
@@ -1193,24 +1173,13 @@ export default function App() {
               © {new Date().getFullYear()} Highview Preschool & Kindergarten.
               All rights reserved.
             </p>
-            <div className="flex gap-6">
-              <a href="#" className="hover:text-slate-300">
-                Privacy Policy
-              </a>
-              <a href="#" className="hover:text-slate-300">
-                Terms of Service
-              </a>
-              <a href="#" className="hover:text-slate-300">
-                Parent Portal
-              </a>
-            </div>
           </div>
         </div>
       </footer>
 
       {}
       <a
-        href="https://wa.me/1234567890"
+        href="https://wa.me/26775198558"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transform hover:scale-110 transition-all group"
